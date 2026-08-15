@@ -1,5 +1,16 @@
 .home-page {
     overflow: hidden;
+    background-color: var(--paper);
+    background-image:
+        linear-gradient(rgba(64, 54, 83, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(64, 54, 83, 0.05) 1px, transparent 1px),
+        linear-gradient(rgba(123, 98, 199, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(123, 98, 199, 0.06) 1px, transparent 1px);
+    background-size:
+        24px 24px,
+        24px 24px,
+        120px 120px,
+        120px 120px;
 }
 
 .hero {
@@ -198,7 +209,11 @@
     width: 100%;
     padding: clamp(5rem, 10vw, 9rem) max(1.25rem, calc((100% - 1180px) / 2));
     border-block: 2px solid var(--ink);
-    background: var(--purple-soft);
+    background-color: var(--purple-soft);
+    background-image:
+        linear-gradient(rgba(64, 54, 83, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(64, 54, 83, 0.04) 1px, transparent 1px);
+    background-size: 8px 8px;
 }
 
 .preview-heading {
