@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+import gameboyColor from "@/assets/gameboy-color.webp";
+---
+
+<section class="final-boss" aria-labelledby="prize-title">
+    <div class="console-photo">
+        <div class="photo-tape" aria-hidden="true"></div>
+        <Image src={gameboyColor} alt="A turquoise Game Boy Color" width="588" height="800" />
+        <span>This could be yours!</span>
+    </div>
+    <div class="prize-copy">
+        <p class="prize-kicker">PRIZES</p>
+        <h2 id="prize-title">Finish a challenge.<br /><em>Earn a prize.</em></h2>
+        <p>
+            Every challenge you complete gets you a prize, but if enough projects are submitted, the best projects will earn either a authentic Game Boy Color or Game Boy Advance!
+        </p>
+    </div>
+</section>

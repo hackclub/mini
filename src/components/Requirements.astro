@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+import mysteryBadge from "@/assets/mystery-badge.png";
+---
+
+<section class="challenge-preview" id="challenges" aria-labelledby="challenge-preview-title">
+    <header class="preview-heading">
+        <div>
+            <h2 id="challenge-preview-title">Start with the web.<br />Then choose more.</h2>
+            <p>
+                Make a tiny website to get familiar with the challenge.
+            </p>
+        </div>
+        <div class="preview-note">
+            <p>Ship a website where every page's size is under 512 KB.</p>
+            <ul>
+                <li>
+                    <span aria-hidden="true">✓</span>
+                    <span>Every page can only transfer 512 KB on load</span>
+                </li>
+                <li>
+                    <span aria-hidden="true">✓</span>
+                    <span>You can use <a href="https://radar.cloudflare.com/tools">Cloudflare Radar</a> or your browser's devtools to check</span>
+                </li>
+            </ul>
+            <p class="preview-note-constraint">
+                Try avoiding raster (.png) images in favor of vector (.svg) images instead.
+                Large font imports can take up anywhere from 50MB to 500MB, and so can JavaScript bundles!
+            </p>
+            <Image class="preview-note-badge" src={mysteryBadge} alt="Mystery prize badge" width="800" height="800" />
+            <p class="preview-note-prize"><strong>The prize is</strong> a custom embroidered Hack Club patch!</p>
+            <a class="challenge-link" href="https://forms.hackclub.com/mini-submission" target="_blank" rel="noreferrer">
+                Start this challenge <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+    </header>
+</section>

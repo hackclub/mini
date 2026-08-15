@@ -1,0 +1,25 @@
+---
+import TopFs from '@/components/TopFS.astro';
+import Requirements from '@/components/Requirements.astro';
+import ChallengeCatalogue from '@/components/ChallengeCatalogue.astro';
+import ChallengePrize from '@/components/ChallengePrize.astro';
+import Layout from '@/layouts/Layout.astro';
+import Submit from '@/components/Submit.astro';
+import '@/styles/index.css';
+import '@/styles/challenges.css';
+---
+
+<Layout
+    title="Mini | Build small projects"
+    description="Build a small website, PCB, game, or digital project. Earn prizes from Hack Club."
+>
+    <div class="home-page" id="top">
+        <main>
+            <TopFs />
+            <Requirements />
+            <ChallengeCatalogue />
+            <ChallengePrize />
+            <Submit />
+        </main>
+    </div>
+</Layout>
