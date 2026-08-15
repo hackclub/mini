@@ -195,10 +195,6 @@
     line-height: 1.5;
 }
 
-.challenge-card > .challenge-link {
-    max-width: 17rem;
-}
-
 .final-boss {
     margin-bottom: clamp(5rem, 10vw, 8rem);
     padding: clamp(2rem, 6vw, 5rem);
